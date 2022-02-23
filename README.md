@@ -4,7 +4,7 @@
 The cost of healthcare in the United States (US) is rising each and every day, especially within the prescription drug market. Big Pharma strategically uses the patent system to extend existing patents beyond their initial 20-year protection which in return, hurts drug innovation. To further investigate, this analysis compares the top ten drug companies to others within the clinical trials dataset. 
 
 ## Code
-Languages: Python, SQL
+Languages: Python, SQL <br>
 Packages: apache_beam, airflow
 
 ## Data 
