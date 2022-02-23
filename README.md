@@ -24,8 +24,14 @@ Data cleaning for the datset includes:
 - removing duplicates 
 
 ## Results 
+In terms of clinical trial status, the top ten pharmaceutical companies had slightly more completed clinical trials. However, among the other categories, all pharmaceutical companies had similar percentage amounts. 
+
+![overall_status](https://github.com/abelasandovalg/clinical-trials/blob/main/images/overall_status.png)
+
 Based on the top ten conditions, only two conditions were oversaturated by the top ten pharmaceutical companies: Diabetes Mellitus (Type 2) and Hypertension. Rheumatoid Arthritis clinical studies were split evenly among all pharmaceutical companies and the rest of the conditions were mostly conducted by other companies. 
 
+![conditions](https://github.com/abelasandovalg/clinical-trials/blob/main/images/conditions.png)
+
 ## Future Improvements 
-1. 'Conditions' is notable feature within the NIH Clinical Trials dataset. However, due to the large amount of conditions, this feature was not included in the analysis. In the future, grouping together similar conditions will allow for the inclusion of this feature in the analysis and visualization. 
+1. 'Conditions' is notable feature within the NIH Clinical Trials dataset. However, due to the large amount of conditions, there are certain conditions that overlap with one another. In the future, grouping together similar conditions will allow for a more accurate analysis and visualization. 
 2. The top ten pharmaceutical companies were based upon the Harvard Bird's Eye dataset. In the future, including additional 'Big Pharma' companies could allow for greater insights.
