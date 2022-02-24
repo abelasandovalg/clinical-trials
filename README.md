@@ -23,6 +23,19 @@ Data cleaning for the datset includes:
 - casting TIMESTAMP to DATE data types 
 - removing duplicates 
 
+## File Descriptions
+`*_beam.py`: Python files used to create modeled tables using BigQuery
+`*_beam_dataflow.py`: Python files used to create final modeled tables using BigQuery
+`erd-*.pdf`: Entity relationship diagrams (ERD)
+`*_ingest.ipynb`: Notebooks used to explore initial datasets 
+`*_modeled.ipynb`: Notebooks used to create modeleted tables from initial staging 
+`nih_joins.ipynb`: Notebook used to explore cross-dataset queries using joins 
+`nih_erd_staging_queries.ipynb`: Notebook used to create and modify tables and detect duplicates for final ERD staging 
+`nih_analysis.ipynb`: Initial data analysis for NIH dataset 
+`cross_dataset_analysis.ipynb`: Cross-dataset analysis + view creation for final dashboard 
+`nih_workflow.py`: Google Airflow workflow/pipeline setup using DAGs and *_beam_dataflow.py files 
+`slides.pdf`: Final presentation slides 
+
 ## Results 
 In terms of clinical trial status, the top ten pharmaceutical companies had slightly more completed clinical trials. However, among the other categories, all pharmaceutical companies had similar percentage amounts. 
 
