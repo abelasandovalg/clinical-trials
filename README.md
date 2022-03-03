@@ -13,8 +13,8 @@ This analysis contains data from two sources:
 [**National Institutes of Health**](https://clinicaltrials.gov/api/gui/ref/download_all) <br>
 The NIH dataset contains slightly over 700,000 records with 15 tables in total. The primary key for the dataset is the nct_number. Additionally, notable tables include clinical studies main, clinical results, and interventions. 
 
-[**Harvard**](https://www.aerodatalab.org/birds-eye-view-of-research-landscape) <br>
-The Harvard Bird's Eye dataset contains aroudn 13,000 records with nct_number as the primary key field. This datset contains the data on all clinical trial registration records from ten large pharmaceutical companies. 
+[**Bird's Eye**](https://www.aerodatalab.org/birds-eye-view-of-research-landscape) <br>
+The Bird's Eye dataset contains aroudn 13,000 records with nct_number as the primary key field. This datset contains the data on all clinical trial registration records from ten large pharmaceutical companies. 
 
 ### Data Cleaning 
 Data cleaning for the datset includes: 
@@ -24,17 +24,17 @@ Data cleaning for the datset includes:
 - removing duplicates 
 
 ## File Descriptions
-`*_beam.py`: Python files used to create modeled tables using BigQuery
-`*_beam_dataflow.py`: Python files used to create final modeled tables using BigQuery
-`erd-*.pdf`: Entity relationship diagrams (ERD)
-`*_ingest.ipynb`: Notebooks used to explore initial datasets 
-`*_modeled.ipynb`: Notebooks used to create modeleted tables from initial staging 
-`nih_joins.ipynb`: Notebook used to explore cross-dataset queries using joins 
-`nih_erd_staging_queries.ipynb`: Notebook used to create and modify tables and detect duplicates for final ERD staging 
-`nih_analysis.ipynb`: Initial data analysis for NIH dataset 
-`cross_dataset_analysis.ipynb`: Cross-dataset analysis + view creation for final dashboard 
-`nih_workflow.py`: Google Airflow workflow/pipeline setup using DAGs and *_beam_dataflow.py files 
-`slides.pdf`: Final presentation slides 
+`*_beam.py`: Python files used to create modeled tables using BigQuery <br>
+`*_beam_dataflow.py`: Python files used to create final modeled tables using BigQuery <br>
+`erd-*.pdf`: Entity relationship diagrams (ERD) <br>
+`*_ingest.ipynb`: Notebooks used to explore initial datasets  <br>
+`*_modeled.ipynb`: Notebooks used to create modeleted tables from initial staging <br>
+`nih_joins.ipynb`: Notebook used to explore cross-dataset queries using joins <br>
+`nih_erd_staging_queries.ipynb`: Notebook used to create and modify tables and detect duplicates for final ERD staging <br>
+`nih_analysis.ipynb`: Initial data analysis for NIH dataset <br>
+`cross_dataset_analysis.ipynb`: Cross-dataset analysis + view creation for final dashboard <br>
+`nih_workflow.py`: Google Airflow workflow/pipeline setup using DAGs and *_beam_dataflow.py files <br>
+`slides.pdf`: Final presentation slides <br>
 
 ## Results 
 In terms of clinical trial status, the top ten pharmaceutical companies had slightly more completed clinical trials. However, among the other categories, all pharmaceutical companies had similar percentage amounts. 
